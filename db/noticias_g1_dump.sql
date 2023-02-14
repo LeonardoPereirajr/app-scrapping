@@ -1,0 +1,9 @@
+CREATE DATABASE noticias_g1;
+
+USE noticias_g1;
+
+CREATE TABLE noticia (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  subtitle VARCHAR(255) NOT NULL
+);
