@@ -39,7 +39,7 @@ app.post('/noticia_g1', cors(), bodyParser.json(), async (req, res) => {
     await browser.close();
   
     const conn = await mysql.createConnection(dbConfig);
-    await conn.execute('INSERT INTO noticias (title, subtitle) VALUES (?, ?)', [title, subtitle]);
+    await conn.execute('INSERT INTO noticia (title, subtitle) VALUES (?, ?)', [title, subtitle]);
     await conn.end();
   
     res.json({ title, subtitle });
