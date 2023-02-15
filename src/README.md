@@ -8,7 +8,7 @@ Instale as dependências do projeto com o comando:
 
  - npm install
 
-Instale as demais dependências necessárias seguintes sendo o Express.JS para criar a API REST, o Puppeteer.js para fazer o web scrapping, o MYSQL2 para armazenar os dados rasgados e o body-parser para analisar o corpo da requisição. Além disso, as dependências @types são instaladas para fornecer suporte de tipo para as bibliotecas instaladas:
+Instale as demais dependências necessárias seguintes sendo o Express.JS para criar a API REST, o Puppeteer.js para fazer o web scrapping, o MYSQL2 para armazenar os dados raspados e o body-parser para analisar o corpo da requisição. Além disso, as dependências @types são instaladas para fornecer suporte de tipo para as bibliotecas instaladas:
 
 - npm install express puppeteer mysql2 body-parser cors
 - npm install -D @types/express 
@@ -17,8 +17,8 @@ Instale as demais dependências necessárias seguintes sendo o Express.JS para c
 - npm install -D @types/cors 
 - npm install -D @types/body-parser
 
-O arquivo server.ts utiliza de variáveis de ambientes para acesso seguro ao banco de dados.Um exemplo deste arquivo é o ".env.example". Depois de criado o banco de dados com a Query salva no diretorio /db
-complemente o arquivo .env.example com as informações e salve no mesmo local como ".env".
+O arquivo server.ts utiliza de variáveis de ambientes para acesso seguro ao banco de dados.
+Um exemplo deste arquivo é o ".env.example". Depois de criado o banco de dados com a Query salva no diretorio /db , complemente o arquivo .env.example com as informações e salve no mesmo local como ".env".
 Para o projeto poder utilizar esta funcionalidade instale o pacote "dotenv-safe":
 
 - npm install dotenv-safe
