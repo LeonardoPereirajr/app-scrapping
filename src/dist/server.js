@@ -13,15 +13,11 @@ const dbConfig = {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME
 };
-// cria a conexão com o banco de dados
 const connection = await mysql.createConnection(dbConfig);
-// passa a conexão para a aplicação
 app.set('connection', connection);
-// inicia o servidor na porta definida
 app.listen(port, () => {
     console.log(`Servidor iniciado na porta ${port}`);
 });
-// define a rota /noticia_g1
 app.post('/noticia_g1', cors(), bodyParser.json(), async (req, res) => {
     const url = req.body.url;
     if (!url) {
