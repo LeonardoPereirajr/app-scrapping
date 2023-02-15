@@ -3,15 +3,17 @@ import * as mysql from 'mysql2/promise';
 import puppeteer from 'puppeteer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv-safe';
+dotenv.config();
 
 const app = express();
 const port = 3000;
 
 const dbConfig = {
-  host: 'localhost',
-  user: 'root',
-  password: 'bxm1014',
-  database: 'noticias_g1'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 };
 
 // cria a conexão com o banco de dados
