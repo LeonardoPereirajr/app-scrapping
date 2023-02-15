@@ -68,7 +68,7 @@ Tecnologias utilizadas
 - Dotenv > v8.2.0
 
 Autor
-Nome Sobrenome - https://github.com/LeonardoPereirajr
+| Leonardo Pereira | 
 
 
 
