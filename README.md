@@ -30,7 +30,7 @@ DB_USER=root
 DB_PASSWORD=senha
 DB_NAME=noticias
 
-## Execuxão:
+## Execução:
 
 Na pasta raiz \src digite node dist/server.js pois com o comando "tsc" um arquivo server.js foi compilado para este diretório.
 
